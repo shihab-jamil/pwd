@@ -1,7 +1,7 @@
 <template>
   <main class="bg-black">
-    <header class="px-44">
-      <div class="flex border-b-2 border-b-red-500 items-center py-4 justify-between px-20">
+    <header class="px-32">
+      <div class="flex border-b-2 border-b-red-500 items-center py-4 justify-between px-14">
         <div class="section-left flex flex-col gap-6">
           <div class="flex gap-12 text-white">
             <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500">
@@ -132,7 +132,7 @@
         <img src="~/assets/partners/partner_5.png">
       </div>
     </section>
-    <footer>
+    <footer class="pb-10">
       <div class="affiliate flex flex-col gap-4 px-44">
         <span class="border-b-2 border-b-red-500 flex-auto"></span>
         <div class="flex items-center justify-center gap-10">
