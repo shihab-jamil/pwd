@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-between border-b-2 border-red-500 py-2 text-sm text-gray-500">
+  <div class="flex items-center justify-between border-b-2 border-red-500 py-2 text-sm text-gray-500 w-full overflow-scroll">
     <!-- Tabs -->
     <div class="flex space-x-8  ">
       <button
@@ -21,13 +21,13 @@
               'text-gray-500': activeTab !== index,
             }"
         />
-        <span class="text-lg">{{ tab.name }}</span>
+        <span class="text-sm sm:text-lg text-nowrap">{{ tab.name }}</span>
       </button>
     </div>
 
     <!-- View More -->
     <div>
-      <a href="#" class="text-red-500 hover:underline flex items-center text-lg">
+      <a href="#" class="text-red-500 hover:underline flex items-center text-sm sm:text-lg text-nowrap ml-4">
         View more <span class="ml-1"><Icon icon="mdi:arrow-right" width="24" height="24" /></span>
       </a>
     </div>

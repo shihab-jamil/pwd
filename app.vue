@@ -1,8 +1,8 @@
 <template>
   <main class="bg-black dark:bg-gray-100">
-    <header class="px-32">
+    <header class=" px-10 sm:px-32">
       <div class="flex border-b-2 border-b-red-500 items-center py-4 justify-between px-14">
-        <div class="section-left flex flex-col gap-6">
+        <div class="section-left   gap-6 hidden sm:flex sm:flex-col">
           <div class="flex gap-12 text-white">
             <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500 dark:text-black">
               <img src="~/assets/icon/logos_discord-icon.svg" alt="Discord"/>
@@ -44,7 +44,7 @@
           </div>
         </div>
 
-        <div class="section-right flex flex-col gap-4">
+        <div class="section-right hidden sm:flex sm:flex-col gap-4">
           <div class="flex gap-10 text-white items-center">
             <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500">
               <span class="font-bold dark:text-black">Browse Mods</span>
@@ -67,11 +67,11 @@
         </div>
       </div>
     </header>
-    <h1 class="text-white text-3xl px-48 my-4 dark:text-black">Featured</h1>
+    <h1 class="text-white text-3xl px-10 sm:px-48 my-4 dark:text-black text-center sm:text-left">Featured</h1>
     <carousal />
 
-    <section class="content flex flex-col justify-center pt-10 px-44">
-      <div class="flex justify-between items-center">
+    <section class="content flex flex-col justify-center pt-10 px-10 sm:px-44">
+      <div class="flex justify-between items-center pb-10">
         <div class="flex items-center gap-2">
           <Icon icon="logos:youtube-icon" width="48"></Icon>
           <span class="text-2xl text-white dark:text-black">Youtube</span>
@@ -80,13 +80,13 @@
           View more <span class="ml-1"><Icon icon="mdi:arrow-right" width="24" height="24" /></span>
         </a>
       </div>
-      <div class="flex justify-around items-center py-10">
-        <iframe width="556" height="314" style="border-radius: 15px" src="https://www.youtube.com/embed/iDJ3e3IE8z0?si=EKWDRmgRxyJCd0aJ">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <iframe style="border-radius: 15px; width: 100%" src="https://www.youtube.com/embed/iDJ3e3IE8z0?si=EKWDRmgRxyJCd0aJ">
         </iframe>
-        <iframe width="556" height="314" style="border-radius: 15px" src="https://www.youtube.com/embed/a0l3zDzqFV0?si=BNomthBbC-WgTkeO">
+        <iframe style="border-radius: 15px; width: 100%" src="https://www.youtube.com/embed/a0l3zDzqFV0?si=BNomthBbC-WgTkeO">
         </iframe>
       </div>
-      <div class="flex justify-around items-center py-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-10">
         <div class="container-app">
           <img src="~/assets/feature1.png" alt="Notebook" style="width:100%;">
           <div class="content-app flex justify-between items-center">
@@ -109,7 +109,7 @@
         </div>
       </div>
     </section>
-    <section class="content flex flex-col justify-center py-40 px-44">
+    <section class="content flex flex-col justify-center py-40 px-2 sm:px-44">
       <tabs/>
       <!--  affiliate and partners    -->
       <div class="affiliate flex items-center">
@@ -117,7 +117,7 @@
         <span class="text-lg font-bold text-white px-10 dark:text-black">Affiliates & Partners</span>
         <span class="border-b-2 border-b-red-500 flex-auto"></span>
       </div>
-      <div class="flex items-center justify-around px-20 py-10">
+      <div class="flex items-center justify-around px-20 py-10 flex-col sm:flex-row gap-6 sm:gap-0">
         <img src="~/assets/partners/partner_1.png">
         <img src="~/assets/partners/partner_2.png">
         <img src="~/assets/partners/partner_3.png">
@@ -126,7 +126,7 @@
       </div>
     </section>
     <footer class="pb-10">
-      <div class="affiliate flex flex-col gap-4 px-44">
+      <div class="affiliate flex flex-col gap-4 px-2 sm:px-44">
         <span class="border-b-2 border-b-red-500 flex-auto"></span>
         <div class="flex items-center justify-center gap-10">
           <span class="font-bold text-white dark:text-black">About us</span>
