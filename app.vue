@@ -1,24 +1,24 @@
 <template>
-  <main class="bg-black">
+  <main class="bg-black dark:bg-gray-100">
     <header class="px-32">
       <div class="flex border-b-2 border-b-red-500 items-center py-4 justify-between px-14">
         <div class="section-left flex flex-col gap-6">
           <div class="flex gap-12 text-white">
-            <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500">
+            <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500 dark:text-black">
               <img src="~/assets/icon/logos_discord-icon.svg" alt="Discord"/>
               <span class="font-bold">DISCORD</span>
             </div>
-            <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500">
+            <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500 dark:text-black">
               <img src="~/assets/icon/patreon.svg" alt="patreon"/>
               <span class="font-bold">PATREON</span>
             </div>
           </div>
           <div class="flex gap-12 text-white">
-            <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500">
+            <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500 dark:text-black">
               <img src="~/assets/icon/youtube.svg" alt="youtube"/>
               <span class="font-bold">YOUTUBE</span>
             </div>
-            <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500">
+            <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500 dark:text-black">
               <img src="~/assets/icon/twitter.svg" alt="twitter"/>
               <span class="font-bold">TWITTER/X</span>
             </div>
@@ -30,10 +30,10 @@
 
           <div class="flex relative w-full">
             <input
-                class="border-2 border-gray-400 bg-black transition h-10 px-5 pr-16 rounded-md focus:outline-none w-full text-white text-lg "
+                class="border-2 border-gray-400 bg-black transition h-10 px-5 pr-16 rounded-md focus:outline-none w-full text-white text-lg dark:bg-white"
                 type="search" name="search" placeholder="Search"/>
             <button type="submit" class="absolute right-2 top-2.5 mr-4">
-              <svg class="text-white h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+              <svg class="text-white h-4 w-4 fill-current " xmlns="http://www.w3.org/2000/svg"
                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                    viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
                    width="512px" height="512px">
@@ -47,41 +47,34 @@
         <div class="section-right flex flex-col gap-4">
           <div class="flex gap-10 text-white items-center">
             <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500">
-              <span class="font-bold">Browse Mods</span>
+              <span class="font-bold dark:text-black">Browse Mods</span>
             </div>
             <div class="flex items-center gap-2 pb-1 border-b-2 border-red-500">
-              <span class="font-bold">Browse Wiki</span>
+              <span class="font-bold dark:text-black">Browse Wiki</span>
             </div>
             <div class="flex items-center gap-2 p-1 px-2 border-2 border-gray-300">
               <img src="~/assets/icon/logos_steam.svg" alt="patreon" height="24" width="24"/>
-              <span><strong>Login</strong> with <br> Steam</span>
+              <span class="dark:text-black"><strong>Login</strong> with <br> Steam</span>
             </div>
           </div>
           <div class="flex justify-between text-white">
-            <div class="">
-              <input type="checkbox" class="checkbox" id="checkbox">
-              <label for="checkbox" class="checkbox-label">
-                <Icon icon="tdesign:moon-filled" class="fa-moon" width="24" height="24"/>
-                <Icon icon="solar:sun-bold" class="fa-sun" width="24" height="24"/>
-                <span class="ball"></span>
-              </label>
-            </div>
+            <theme-switcher />
             <div class="text-right">
-              <span>Trouble with downloading?</span> <br>
+              <span class="dark:text-black">Trouble with downloading?</span> <br>
               <span class="text-red-500">Click here!</span>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <h1 class="text-white text-3xl px-48 my-4">Featured</h1>
+    <h1 class="text-white text-3xl px-48 my-4 dark:text-black">Featured</h1>
     <carousal />
 
     <section class="content flex flex-col justify-center pt-10 px-44">
       <div class="flex justify-between items-center">
         <div class="flex items-center gap-2">
           <Icon icon="logos:youtube-icon" width="48"></Icon>
-          <span class="text-2xl text-white">Youtube</span>
+          <span class="text-2xl text-white dark:text-black">Youtube</span>
         </div>
         <a href="#" class="text-red-500 hover:underline flex items-center text-lg">
           View more <span class="ml-1"><Icon icon="mdi:arrow-right" width="24" height="24" /></span>
@@ -121,7 +114,7 @@
       <!--  affiliate and partners    -->
       <div class="affiliate flex items-center">
         <span class="border-b-2 border-b-red-500 flex-auto"></span>
-        <span class="text-lg font-bold text-white px-10">Affiliates & Partners</span>
+        <span class="text-lg font-bold text-white px-10 dark:text-black">Affiliates & Partners</span>
         <span class="border-b-2 border-b-red-500 flex-auto"></span>
       </div>
       <div class="flex items-center justify-around px-20 py-10">
@@ -136,19 +129,19 @@
       <div class="affiliate flex flex-col gap-4 px-44">
         <span class="border-b-2 border-b-red-500 flex-auto"></span>
         <div class="flex items-center justify-center gap-10">
-          <span class="font-bold text-white">About us</span>
-          <span class="font-bold text-white">Terms of use</span>
-          <span class="font-bold text-white">Discord</span>
-          <span class="font-bold text-white">Help</span>
+          <span class="font-bold text-white dark:text-black">About us</span>
+          <span class="font-bold text-white dark:text-black">Terms of use</span>
+          <span class="font-bold text-white dark:text-black">Discord</span>
+          <span class="font-bold text-white dark:text-black">Help</span>
         </div>
         <div class="flex items-center justify-center">
-          <span class="text-white">© 2018 - 2024, PWMods. All rights reserved. All trademarks and registered trademarks are the property of their respective owners. | Created by <span
+          <span class="text-white dark:text-black">© 2018 - 2024, PWMods. All rights reserved. All trademarks and registered trademarks are the property of their respective owners. | Created by <span
               class="text-red-500">Grix</span> & <span class="text-red-500">Titavius</span></span>
         </div>
         <div class="flex items-center justify-center">
           <span class="text-white">
             <span class="text-red-500">Powered by ®</span> <span class="text-red-500 font-bold">Steam</span>
-            | Total Members ( 73766 )
+            <span class="dark:text-black">| Total Members ( 73766 )</span>
           </span>
         </div>
       </div>

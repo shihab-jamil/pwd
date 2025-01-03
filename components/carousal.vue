@@ -140,11 +140,12 @@ const carouselConfig = {
   width: 70%; /* Half of the image */
   height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0)); /* Fading effect */
+  border-radius: 10px 0 0 10px;
 }
 .text {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10px;
   color: white;
   font-size: 24px;
   font-weight: bold;
